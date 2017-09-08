@@ -8,18 +8,35 @@
     tools:context="com.github.ricardosbarbosa.firstapp.MainActivity"
     android:orientation="vertical">
 
-    <TextView
+    <RelativeLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        style="@style/Base.TextAppearance.AppCompat.Large"
-        android:text="@string/facebook"
-        android:textColor="@color/colorPrimary"/>
+        android:layout_height="wrap_content">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        style="@style/Base.TextAppearance.AppCompat.Small"
-        android:text="@string/rede_social" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Base.TextAppearance.AppCompat.Large"
+                android:text="@string/facebook"
+                android:textColor="@color/colorPrimary"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Base.TextAppearance.AppCompat.Small"
+                android:text="@string/rede_social" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/facebook_logo"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
 
     <TextView
         android:layout_width="wrap_content"
@@ -27,6 +44,7 @@
         style="@style/Base.TextAppearance.AppCompat.Small"
         android:text="@string/description"
         android:layout_marginTop="16dp"/>
+
 
 
     <RelativeLayout
